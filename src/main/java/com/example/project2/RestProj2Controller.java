@@ -47,7 +47,7 @@ public class RestProj2Controller {
     @RequestMapping(value = "/getLatestVehicles", method = RequestMethod.GET)
     public List<Vehicle> getLatestVehicles() throws IOException {
 
-        List vehicles = vehicleDao.getLastTen();
+        List vehicles = vehicleDao.getLatestVehicles();
 
         return vehicles;
 

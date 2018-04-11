@@ -40,9 +40,9 @@ public class VehicleDao {
         entityManager.remove(vehicle);
     }
 
-    public List getLastTen() {
+    public List getLatestVehicles() {
         Query query = entityManager.createNativeQuery("SELECT v.id, v.makeModel, v.year, v.retailPrice FROM vehicles v ORDER BY v.id desc");
-        List<Vehicle> vehList = query.setMaxResults(10).getResultList();
+        List<Vehicle> vehList = query.getResultList();
         return vehList;
 
     }
