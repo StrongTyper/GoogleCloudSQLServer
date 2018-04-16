@@ -1,0 +1,1 @@
+CREATE TABLE vehicles (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, makeModel Varchar(20) NOT NULL, year int NOT NULL, retailPrice DECIMAL(10,2) NOT NULL);

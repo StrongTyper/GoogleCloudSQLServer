@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 import java.util.Random;
 
-//@Component
+@Component
 public class MyTasks {
 
     RestTemplate restTemplate = new RestTemplate();
