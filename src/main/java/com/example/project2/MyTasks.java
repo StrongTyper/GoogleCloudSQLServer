@@ -1,14 +1,11 @@
 package com.example.project2;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.List;
 import java.util.Random;
 
 @Component
